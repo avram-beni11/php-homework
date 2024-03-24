@@ -22,8 +22,8 @@
           if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $firstName = $_POST['firstName'];
               $lastName = $_POST['lastName'];
-              $gender = $_POST['gender'];
-              $box = $_POST['check'];
+              $gender = $_POST['gender'] ?? '';
+              $box = $_POST['check'] ?? '';
               $email = $_POST['email'];
 
               // Validation
